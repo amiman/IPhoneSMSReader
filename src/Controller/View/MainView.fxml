@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="640.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="998.0">
+               <children>
+                  <Button id="LoadSMSFile" layoutX="867.0" layoutY="34.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="..." />
+                  <Button id="LoadContactFile" layoutX="868.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="..." />
+                  <TextField id="SmsTextField" layoutX="208.0" layoutY="33.0" prefHeight="25.0" prefWidth="600.0" />
+                  <TextField id="ContactTextField" layoutX="209.0" layoutY="76.0" prefHeight="25.0" prefWidth="600.0" />
+                  <TextField alignment="CENTER" editable="false" layoutX="25.0" layoutY="33.0" promptText="SMS FILE" />
+                  <TextField alignment="CENTER" editable="false" layoutX="25.0" layoutY="76.0" promptText="Contact File" />
+                  <Button id="GenrateSMS" alignment="CENTER" layoutX="473.0" layoutY="121.0" mnemonicParsing="false" text="Gnenrate SMS from Files" />
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.5" prefHeight="400.0" prefWidth="600.0">
+               <items>
+                  <AnchorPane maxWidth="-Infinity" prefHeight="400.0" prefWidth="250.0">
+                     <children>
+                        <ListView id="NameListView" layoutY="2.0" prefHeight="638.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="MessagesTextView" prefHeight="638.0" prefWidth="742.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
